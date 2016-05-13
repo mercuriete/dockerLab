@@ -126,6 +126,9 @@ En la sección de [Ejercicios](https://github.com/erasmolpa/dockerLab/blob/maste
 
 
 ****************************************************************************
+					AÑADIDO
+****************************************************************************
+
 Remove all stopped containers :
 
 docker rm $(docker ps -a -q)
