@@ -123,3 +123,49 @@ En la url http://192.168.99.100:8080/wp-admin/install.php , es decir en la http:
 
 En la sección de [Ejercicios](https://github.com/erasmolpa/dockerLab/blob/master/Ejercicios.md) haremos varios ejemplos de compose.
 
+
+
+****************************************************************************
+Remove all stopped containers :
+
+docker rm $(docker ps -a -q)
+You can add -f param to force delete all containers
+
+Remove all images
+
+docker rmi $(docker images -q)
+Remove all images without tag
+
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+Remove all volumes
+
+docker volume rm $(docker volume ls -qf dangling=true)
+Remove container on exit
+
+docker run --rm [OPTIONS] <CONTAINER_ID|CONTAINER_NAME>
+Show latest started container
+
+docker ps -l
+docker ps -n X
+-l display only one container
+
+-n display X latest containers
+
+Show container logs
+
+docker logs -f <CONTAINER_ID|CONTAINER_NAME>
+-f param to follow the upcoming log messages. When you are done, hit CTRL+C
+
+-t param display timestamp
+
+Show container stats
+
+docker stats [CONTAINER_ID|CONTAINER_NAME]
+Without options, stats display all running containers
+
+-a, --all display all containers
+
+Enter in a container
+
+docker exec -it <CONTAINER_ID|CONTAINER_NAME> bash
+For Alpine Linux, replace bash with sh
