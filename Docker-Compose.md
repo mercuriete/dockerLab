@@ -8,7 +8,9 @@
       
       
 see   https://docs.docker.com/compose/env-file/
+
       https://docs.docker.com/compose/reference/
+
       https://docs.docker.com/compose/compose-file/
 
 ### Compose. Primeros pasos:
