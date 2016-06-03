@@ -1,10 +1,10 @@
-PRUEBA DE CONCEPTO DE RANCHEROS + RANCHER + KUBERNETES
+﻿PRUEBA DE CONCEPTO DE RANCHEROS + RANCHER + KUBERNETES
 ======================================================
 
 Ingredientes:
 - docker toolbox instalado con docker-machine, alternativamente docker-machine en linux y virtualbox o KVM.
 
-Elaboraci�n:
+Elaboración:
 
 1) Creacion de 3 maquinas virtuales. 1 maestro y 2 nodos de cluster.
 
